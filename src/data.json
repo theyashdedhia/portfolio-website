@@ -1,0 +1,85 @@
+
+{
+  "personalInfo": {
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "email": "your.email@example.com",
+    "location": "New York, NY",
+    "about": [
+      "I'm a passionate software developer with a strong foundation in computer science and a love for creating efficient, user-friendly applications. Currently pursuing my Master's degree to deepen my knowledge and expand my skill set.",
+      "My approach combines technical expertise with creative problem-solving. I believe in writing clean, maintainable code and creating intuitive user experiences. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
+      "I'm constantly looking for new challenges and opportunities to grow as a developer. Let's connect and build something amazing together!"
+    ]
+  },
+  "skills": [
+    "JavaScript/TypeScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "SQL Databases",
+    "AWS/Cloud",
+    "Next.js",
+    "CI/CD"
+  ],
+  "education": [
+    {
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "institution": "University Name",
+      "year": "2022 - Present",
+      "description": "Currently pursuing advanced studies in Computer Science with a focus on Machine Learning and Distributed Systems."
+    },
+    {
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "institution": "University Name",
+      "year": "2018 - 2022",
+      "description": "Graduated with honors, specializing in Software Engineering and Data Structures."
+    }
+  ],
+  "workExperience": [
+    {
+      "position": "Senior Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "period": "2022 - Present",
+      "description": "Leading development of cloud-native applications using React and Node.js. Implemented CI/CD pipelines reducing deployment time by 40%. Mentored junior developers and conducted code reviews.",
+      "technologies": ["React", "Node.js", "AWS", "Docker", "TypeScript"]
+    },
+    {
+      "position": "Software Developer",
+      "company": "Digital Innovations",
+      "period": "2020 - 2022",
+      "description": "Developed and maintained web applications for enterprise clients. Collaborated with design and product teams to deliver high-quality software solutions. Improved application performance by 30%.",
+      "technologies": ["JavaScript", "React", "Express", "MongoDB"]
+    },
+    {
+      "position": "Junior Developer",
+      "company": "StartUp Vision",
+      "period": "2018 - 2020",
+      "description": "Assisted in building MVP products for early-stage startups. Worked in an agile environment with daily stand-ups and sprint planning. Gained experience in full-stack development.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yourusername",
+      "ariaLabel": "GitHub Profile"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/yourusername",
+      "ariaLabel": "LinkedIn Profile"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/yourusername",
+      "ariaLabel": "Twitter Profile"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:your.email@example.com",
+      "ariaLabel": "Send an email"
+    }
+  ]
+}
