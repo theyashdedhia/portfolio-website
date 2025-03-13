@@ -1,7 +1,9 @@
 
 import { motion } from "framer-motion";
-import { CheckCircle, Briefcase } from "lucide-react";
+import { CheckCircle, Briefcase, GraduationCap, Calendar } from "lucide-react";
 import data from "@/data.json";
+import SkillsVisualization from "./SkillsVisualization";
+import StartupJourney from "./StartupJourney";
 
 const About = () => {
   return (
@@ -23,7 +25,7 @@ const About = () => {
           <div className="w-16 h-1 bg-primary/30 mx-auto"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid gap-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -36,79 +38,94 @@ const About = () => {
                 {paragraph}
               </p>
             ))}
-            
-            <div className="mt-8">
-              <h4 className="text-xl font-semibold mb-4">My Skills</h4>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                {data.skills.map((skill, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle size={16} className="text-primary mr-2" />
-                    <span className="text-gray-700">{skill}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </motion.div>
+          
+          <SkillsVisualization />
           
           <div className="space-y-12">
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              transition={{ duration: 0.7 }}
             >
-              <h3 className="text-2xl font-bold mb-6">Education</h3>
-              <div className="space-y-8">
+              <div className="flex items-center mb-6">
+                <GraduationCap size={24} className="text-primary mr-3" />
+                <h3 className="text-2xl font-bold">Education</h3>
+              </div>
+              <div className="relative border-l-2 border-primary/20 pl-8 ml-3 space-y-12">
                 {data.education.map((education, index) => (
-                  <div key={index} className="relative pl-8 border-l-2 border-primary/20 hover-lift">
-                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                    <span className="inline-block px-3 py-1 mb-2 text-xs font-medium rounded-full bg-gray-100">
-                      {education.year}
-                    </span>
-                    <h4 className="text-xl font-semibold">{education.degree}</h4>
-                    <p className="text-primary font-medium">{education.field}</p>
-                    <p className="text-gray-600 mb-2">{education.institution}</p>
-                    <p className="text-gray-700 text-sm">{education.description}</p>
-                  </div>
+                  <motion.div 
+                    key={index} 
+                    className="relative -ml-12 hover-lift"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-primary"></div>
+                    <div className="bg-white shadow-md rounded-lg p-6 ml-8">
+                      <div className="flex items-center mb-2">
+                        <Calendar size={16} className="text-primary mr-2" />
+                        <span className="text-sm text-gray-600">{education.year}</span>
+                      </div>
+                      <h4 className="text-xl font-semibold">{education.degree}</h4>
+                      {education.field && <p className="text-primary font-medium">{education.field}</p>}
+                      <p className="text-gray-600 mb-2">{education.institution}</p>
+                      <p className="text-gray-700 text-sm">{education.description}</p>
+                    </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
             
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.3 }}
+              transition={{ duration: 0.7 }}
             >
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Briefcase size={20} className="mr-2" /> 
-                Work Experience
-              </h3>
-              <div className="space-y-8">
+              <div className="flex items-center mb-6">
+                <Briefcase size={24} className="text-primary mr-3" />
+                <h3 className="text-2xl font-bold">Work Experience</h3>
+              </div>
+              <div className="relative border-l-2 border-primary/20 pl-8 ml-3 space-y-12">
                 {data.workExperience.map((work, index) => (
-                  <div key={index} className="relative pl-8 border-l-2 border-primary/20 hover-lift">
-                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                    <span className="inline-block px-3 py-1 mb-2 text-xs font-medium rounded-full bg-gray-100">
-                      {work.period}
-                    </span>
-                    <h4 className="text-xl font-semibold">{work.position}</h4>
-                    <p className="text-primary font-medium">{work.company}</p>
-                    <p className="text-gray-700 my-2">{work.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {work.technologies.map((tech, techIndex) => (
-                        <span 
-                          key={techIndex} 
-                          className="px-2 py-1 text-xs bg-gray-100 rounded-full text-gray-700"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                  <motion.div 
+                    key={index} 
+                    className="relative -ml-12 hover-lift"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-primary"></div>
+                    <div className="bg-white shadow-md rounded-lg p-6 ml-8">
+                      <div className="flex items-center mb-2">
+                        <Calendar size={16} className="text-primary mr-2" />
+                        <span className="text-sm text-gray-600">{work.period}</span>
+                      </div>
+                      <h4 className="text-xl font-semibold">{work.position}</h4>
+                      <p className="text-primary font-medium">{work.company}</p>
+                      <p className="text-gray-700 my-2">{work.description}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {work.technologies.map((tech, techIndex) => (
+                          <span 
+                            key={techIndex} 
+                            className="px-2 py-1 text-xs bg-gray-100 rounded-full text-gray-700"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
           </div>
+          
+          <StartupJourney />
         </div>
       </div>
     </section>

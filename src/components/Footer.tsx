@@ -1,5 +1,6 @@
 
 import SocialLinks from "./SocialLinks";
+import data from "@/data.json";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,13 +18,13 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <span className="font-medium w-20">Email:</span>
-                <a href="mailto:your.email@example.com" className="text-primary hover:underline">
-                  your.email@example.com
+                <a href={`mailto:${data.personalInfo.email}`} className="text-primary hover:underline">
+                  {data.personalInfo.email}
                 </a>
               </div>
               <div className="flex items-center">
                 <span className="font-medium w-20">Location:</span>
-                <span className="text-gray-700">Your City, Country</span>
+                <span className="text-gray-700">{data.personalInfo.location}</span>
               </div>
             </div>
             
@@ -47,7 +48,7 @@ const Footer = () => {
         <div className="section-divider mb-8"></div>
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} {data.personalInfo.name}. All rights reserved.</p>
           <p className="mt-2 md:mt-0">
             Designed with 
             <span className="text-red-500 mx-1">♥</span>
