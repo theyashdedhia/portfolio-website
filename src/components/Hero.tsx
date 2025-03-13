@@ -1,6 +1,8 @@
+
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DownloadButton from "./DownloadButton";
+import data from "@/data.json";
 
 const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -47,11 +49,11 @@ const Hero = () => {
             className="flex flex-col items-start"
           >
             <span className="inline-block px-3 py-1 mb-6 text-sm font-medium rounded-full bg-primary/10 text-primary">
-              Software Developer
+              {data.personalInfo.title}
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Hi, I'm <span className="text-primary">{data.personalInfo.name}</span>
             </h1>
             
             <p className="text-lg text-gray-700 mb-8 max-w-lg">
