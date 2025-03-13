@@ -1,84 +1,126 @@
-
 {
   "personalInfo": {
-    "name": "John Doe",
-    "title": "Full Stack Developer",
-    "email": "your.email@example.com",
-    "location": "New York, NY",
+    "name": "Yash Dedhia",
+    "title": "Software Developer",
+    "email": "yashdedhia1214@gmail.com",
+    "location": "Melbourne, Australia",
     "about": [
-      "I'm a passionate software developer with a strong foundation in computer science and a love for creating efficient, user-friendly applications. Currently pursuing my Master's degree to deepen my knowledge and expand my skill set.",
-      "My approach combines technical expertise with creative problem-solving. I believe in writing clean, maintainable code and creating intuitive user experiences. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
-      "I'm constantly looking for new challenges and opportunities to grow as a developer. Let's connect and build something amazing together!"
+      "I'm a passionate software developer with a strong foundation in computer science and a love for building scalable and efficient applications.",
+      "Currently pursuing my Master's in Information Technology at RMIT University with a focus on algorithms, advanced programming, and distributed systems.",
+      "I thrive on solving complex problems and have a keen interest in full-stack development, cloud computing, and AI-driven solutions."
     ]
   },
   "skills": [
-    "JavaScript/TypeScript",
-    "React",
-    "Node.js",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#",
+    "Vue.js",
+    "React.js",
+    "Angular.js",
+    ".NET Core",
+    "Supabase",
+    "PostgreSQL",
+    "MySQL",
     "MongoDB",
-    "SQL Databases",
-    "AWS/Cloud",
-    "Next.js",
-    "CI/CD"
+    "Git",
+    "GitHub",
+    "Data Structures",
+    "Algorithms",
+    "TensorFlow",
+    "Keras"
   ],
   "education": [
     {
-      "degree": "Master of Science",
-      "field": "Computer Science",
-      "institution": "University Name",
-      "year": "2022 - Present",
-      "description": "Currently pursuing advanced studies in Computer Science with a focus on Machine Learning and Distributed Systems."
+      "degree": "Master of Information Technology",
+      "institution": "RMIT University",
+      "year": "March 2024 - November 2025",
+      "description": "Above distinction scores in key subjects including Algorithms and Analysis, Advanced Programming. Active volunteer at RMIT Student Union and RMIT Indian Club."
     },
     {
-      "degree": "Bachelor of Science",
-      "field": "Computer Science",
-      "institution": "University Name",
-      "year": "2018 - 2022",
-      "description": "Graduated with honors, specializing in Software Engineering and Data Structures."
+      "degree": "Bachelor of Engineering",
+      "field": "Computer Engineering",
+      "institution": "Mumbai University",
+      "year": "July 2019 - June 2023",
+      "description": "Graduated with a 7.8/10.0 CGPA. Held committee positions in the Entrepreneurship Cell and Student Council."
     }
   ],
   "workExperience": [
     {
-      "position": "Senior Software Engineer",
-      "company": "Tech Solutions Inc.",
-      "period": "2022 - Present",
-      "description": "Leading development of cloud-native applications using React and Node.js. Implemented CI/CD pipelines reducing deployment time by 40%. Mentored junior developers and conducted code reviews.",
-      "technologies": ["React", "Node.js", "AWS", "Docker", "TypeScript"]
+      "position": "Full Stack Developer",
+      "company": "Myluxfleet",
+      "period": "May 2024 - Present",
+      "description": "Led the development of the MVP, optimizing system performance. Built scalable solutions using Vue.js, Quasar, Supabase, and PostgreSQL.",
+      "technologies": ["Vue.js", "Quasar", "Supabase", "PostgreSQL"]
     },
     {
       "position": "Software Developer",
-      "company": "Digital Innovations",
-      "period": "2020 - 2022",
-      "description": "Developed and maintained web applications for enterprise clients. Collaborated with design and product teams to deliver high-quality software solutions. Improved application performance by 30%.",
-      "technologies": ["JavaScript", "React", "Express", "MongoDB"]
+      "company": "Arcon Techsolutions",
+      "period": "July 2023 - February 2024",
+      "description": "Designed and implemented RESTful APIs within a microservice architecture. Conducted data analysis to align technical outputs with business goals.",
+      "technologies": ["Node.js", "Express.js", "MongoDB"]
     },
     {
-      "position": "Junior Developer",
-      "company": "StartUp Vision",
-      "period": "2018 - 2020",
-      "description": "Assisted in building MVP products for early-stage startups. Worked in an agile environment with daily stand-ups and sprint planning. Gained experience in full-stack development.",
-      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+      "position": "Software Developer",
+      "company": "Parth International",
+      "period": "April 2021 - June 2023",
+      "description": "Developed an inventory management system using React.js, Node.js, and MongoDB. Trained staff for system adoption and conducted system testing for accuracy and reliability.",
+      "technologies": ["React.js", "Node.js", "MongoDB"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ai Browser",
+      "url": "https://github.com/theyashdedhia/ezbrowser",
+      "description": "Custom browser that summarizes web pages and provides AI chat with voice controls.",
+      "technologies": ["Python3", "OpenAI API"]
+    },
+    {
+      "name": "Quizzer",
+      "url": "https://github.com/theyashdedhia/Quizzer",
+      "description": "Quiz application allowing users to take quizzes, view history, and manage accounts.",
+      "technologies": ["MongoDB", "Express.js", "React.js", "Node.js"]
+    }
+  ],
+  "extraCurricular": [
+    {
+      "role": "Founder",
+      "organization": "Comed Learning",
+      "period": "March 2024 - Present",
+      "description": "Founded an ed-tech startup providing services to over 300 students."
+    },
+    {
+      "role": "Hackathon Participant",
+      "description": "Participated in multiple 2-3 day hackathons, including runner-up at Monash University and second runner-up at RMIT University."
+    },
+    {
+      "role": "Wildlife Rescuer",
+      "organization": "RAWW",
+      "period": "August 2020 - February 2023",
+      "description": "Volunteered with India's largest urban wildlife conservation organization."
+    },
+    {
+      "role": "Trek Leader",
+      "organization": "Mountain Marks",
+      "period": "March 2017 - July 2023",
+      "description": "Organized and led 10+ treks across the Himalayan ranges."
     }
   ],
   "socialLinks": [
     {
       "name": "GitHub",
-      "url": "https://github.com/yourusername",
+      "url": "https://github.com/theyashdedhia",
       "ariaLabel": "GitHub Profile"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/yourusername",
+      "url": "https://www.linkedin.com/in/theyashdedhia/",
       "ariaLabel": "LinkedIn Profile"
     },
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/yourusername",
-      "ariaLabel": "Twitter Profile"
-    },
-    {
       "name": "Email",
-      "url": "mailto:your.email@example.com",
+      "url": "mailto:yashdedhia1214@gmail.com",
       "ariaLabel": "Send an email"
     }
   ]
