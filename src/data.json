@@ -43,7 +43,7 @@
       "field": "Computer Engineering",
       "institution": "Mumbai University",
       "year": "July 2019 - June 2023",
-      "description": "Graduated with a 7.8/10.0 CGPA. Held committee positions in the Entrepreneurship Cell and Student Council."
+      "description": "Held committee positions in the Entrepreneurship Cell and Student Council."
     }
   ],
   "workExperience": [
@@ -59,14 +59,14 @@
       "company": "Arcon Techsolutions",
       "period": "July 2023 - February 2024",
       "description": "Designed and implemented RESTful APIs within a microservice architecture. Conducted data analysis to align technical outputs with business goals.",
-      "technologies": ["Node.js", "Express.js", "MongoDB"]
+      "technologies": ["C#", ".NET Core", "Angular", "MySQL"]
     },
     {
       "position": "Software Developer",
       "company": "Parth International",
       "period": "April 2021 - June 2023",
       "description": "Developed an inventory management system using React.js, Node.js, and MongoDB. Trained staff for system adoption and conducted system testing for accuracy and reliability.",
-      "technologies": ["React.js", "Node.js", "MongoDB"]
+      "technologies": ["React.js", "Express.js", "Node.js", "MongoDB"]
     }
   ],
   "projects": [
