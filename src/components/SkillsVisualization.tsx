@@ -14,6 +14,16 @@ const categoryIcons: Record<string, JSX.Element> = {
   'AI & ML': <BrainCircuit className="h-6 w-6" />
 };
 
+// Predefined color palette to use in rotation
+const colorPalette = [
+  'bg-blue-500',    // Blue
+  'bg-green-500',   // Green
+  'bg-yellow-500',  // Yellow
+  'bg-purple-500',  // Purple
+  'bg-red-500',     // Red
+  'bg-indigo-500'   // Indigo
+];
+
 const SkillsVisualization = () => {
   const skillCategories = data.skills.categories;
   const [activeCategory, setActiveCategory] = useState(skillCategories[0].name);
@@ -25,9 +35,14 @@ const SkillsVisualization = () => {
 
   const activeSkills = getSkillsForActiveCategory();
   
+  // Get color for category using the colorPalette in a loop
   const getCategoryColor = (name: string) => {
-    const category = skillCategories.find(cat => cat.name === name);
-    return category?.color || 'bg-gray-500';
+    const categoryIndex = skillCategories.findIndex(cat => cat.name === name);
+    if (categoryIndex === -1) return 'bg-gray-500'; // Default color if category not found
+    
+    // Use modulo to loop through colors
+    const colorIndex = categoryIndex % colorPalette.length;
+    return colorPalette[colorIndex];
   };
 
   return (
@@ -48,7 +63,7 @@ const SkillsVisualization = () => {
             onClick={() => setActiveCategory(category.name)}
             className={`flex flex-col items-center justify-center p-4 rounded-lg transition-all ${
               activeCategory === category.name 
-                ? `${category.color} text-white shadow-lg scale-105` 
+                ? `${getCategoryColor(category.name)} text-white shadow-lg scale-105` 
                 : 'bg-gray-100 hover:bg-gray-200'
             }`}
           >
