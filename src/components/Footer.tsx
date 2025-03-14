@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="text-gray-700 mb-6 max-w-md">
-              I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!
+            I am always eager to collaborate on innovative projects and connect with like-minded professionals. Whether it's discussing technology, exploring new ideas, or building impactful solutions, I am open to freelance opportunities and consulting engagements. Feel free to reach out!
             </p>
             
             <div className="space-y-3">
@@ -31,17 +31,6 @@ const Footer = () => {
             <div className="mt-6">
               <SocialLinks size={22} />
             </div>
-          </div>
-          
-          <div className="flex flex-col md:items-end">
-            <h2 className="text-3xl font-bold mb-4">Quick Links</h2>
-            <nav className="flex flex-col space-y-2">
-              <a href="#" className="text-gray-700 hover:text-primary transition-colors">Home</a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-              <a href="#skills" className="text-gray-700 hover:text-primary transition-colors">Skills</a>
-              <a href="#projects" className="text-gray-700 hover:text-primary transition-colors">Projects</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
-            </nav>
           </div>
         </div>
         
