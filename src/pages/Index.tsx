@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import SkillsVisualization from "@/components/SkillsVisualization";
 import Projects from "@/components/Projects";
 import Freelancing from "@/components/Freelancing";
 import Footer from "@/components/Footer";
@@ -50,6 +51,7 @@ const Index = () => {
       <Header />
       <Hero />
       <About />
+      <SkillsVisualization />
       <Projects />
       <Freelancing />
       <Footer />
