@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 to-blue-300/30 animate-spin-slow -z-10" />
           <img
             ref={imageRef}
-            src="/avatar.jpg"
+            src="/YashPicTransparent.png"
             alt="Profile"
             className="w-full h-full object-cover rounded-full transition-transform duration-75"
           />
