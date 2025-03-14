@@ -14,6 +14,17 @@
   "skills": {
     "categories": [
       {
+        "name": "Languages",
+        "skills": [
+          {"name": "TypeScript", "level": 95},
+          {"name": "JavaScript", "level": 95},
+          {"name": "Java", "level": 90},
+          {"name": "C#", "level": 75},
+          {"name": "Python", "level": 90}
+        ],
+        "color": "bg-purple-500"
+      },
+      {
         "name": "Frontend",
         "skills": [
           {"name": "TypeScript", "level": 95},
@@ -27,10 +38,9 @@
       {
         "name": "Backend",
         "skills": [
-          {"name": "Java", "level": 90},
-          {"name": "C#", "level": 75},
-          {"name": ".NET Core", "level": 75},
-          {"name": "Python", "level": 90}
+          {"name": "NodeJs", "level": 95},
+          {"name": ".NET Core", "level": 75}
+          
         ],
         "color": "bg-green-500"
       },
@@ -48,7 +58,9 @@
         "name": "Tools",
         "skills": [
           {"name": "Git", "level": 95},
-          {"name": "GitHub", "level": 95}
+          {"name": "GitHub", "level": 95},
+          {"name": "Postman", "level": 95},
+          {"name": "AWS", "level": 75}
         ],
         "color": "bg-purple-500"
       },
@@ -56,7 +68,8 @@
         "name": "Computer Science",
         "skills": [
           {"name": "Data Structures", "level": 85},
-          {"name": "Algorithms", "level": 80}
+          {"name": "Algorithms", "level": 80},
+          {"name": "Probablity & Statics", "level": 75}
         ],
         "color": "bg-red-500"
       },
@@ -64,7 +77,8 @@
         "name": "AI & ML",
         "skills": [
           {"name": "TensorFlow", "level": 60},
-          {"name": "Keras", "level": 60}
+          {"name": "Keras", "level": 60},
+          {"name": "Deep Learning", "level": 65}
         ],
         "color": "bg-indigo-500"
       }
