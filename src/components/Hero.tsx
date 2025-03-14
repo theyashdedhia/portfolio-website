@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DownloadButton from "./DownloadButton";
@@ -44,14 +45,14 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="relative w-64 h-64 md:w-80 md:h-80 mb-8"
+          className="relative w-64 h-64 md:w-80 md:h-80 mb-4"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 to-blue-300/30 animate-spin-slow -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-blue-300/30 animate-spin-slow -z-10" />
           <img
             ref={imageRef}
             src="/YashPicTransparent.png"
             alt="Profile"
-            className="w-full h-full object-cover rounded-full transition-transform duration-75"
+            className="w-full h-full object-cover transition-transform duration-75"
           />
         </motion.div>
         
