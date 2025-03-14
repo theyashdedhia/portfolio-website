@@ -28,6 +28,13 @@ const Hero = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background gradient */}
@@ -76,12 +83,12 @@ const Hero = () => {
           
           <div className="flex flex-wrap gap-4 justify-center">
             <DownloadButton text="Download CV" filePath="/resume.pdf" />
-            <a 
-              href="#contact" 
+            <button 
+              onClick={scrollToContact} 
               className="inline-flex items-center justify-center h-12 px-8 font-medium tracking-wide transition duration-200 rounded-full border-2 border-primary/80 text-primary hover:bg-primary/5"
             >
               Contact Me
-            </a>
+            </button>
           </div>
         </motion.div>
       </div>

@@ -19,6 +19,14 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMenuOpen(false);
+  };
+
   return (
     <header
       className={cn(
@@ -38,18 +46,18 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-sm font-medium transition-colors hover:text-primary">
+          <button onClick={() => scrollToSection('about')} className="text-sm font-medium transition-colors hover:text-primary">
             About
-          </a>
-          <a href="#skills" className="text-sm font-medium transition-colors hover:text-primary">
+          </button>
+          <button onClick={() => scrollToSection('skills')} className="text-sm font-medium transition-colors hover:text-primary">
             Skills
-          </a>
-          <a href="#projects" className="text-sm font-medium transition-colors hover:text-primary">
+          </button>
+          <button onClick={() => scrollToSection('projects')} className="text-sm font-medium transition-colors hover:text-primary">
             Projects
-          </a>
-          <a href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
+          </button>
+          <button onClick={() => scrollToSection('contact')} className="text-sm font-medium transition-colors hover:text-primary">
             Contact
-          </a>
+          </button>
           
           <div className="pl-4 border-l border-gray-200">
             <SocialLinks size={18} />
@@ -98,34 +106,30 @@ const Header = () => {
         )}
       >
         <nav className="flex flex-col space-y-6 text-center mt-8">
-          <a 
-            href="#about" 
+          <button 
+            onClick={() => scrollToSection('about')} 
             className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-            onClick={() => setMenuOpen(false)}
           >
             About
-          </a>
-          <a 
-            href="#skills" 
+          </button>
+          <button 
+            onClick={() => scrollToSection('skills')} 
             className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-            onClick={() => setMenuOpen(false)}
           >
             Skills
-          </a>
-          <a 
-            href="#projects" 
+          </button>
+          <button 
+            onClick={() => scrollToSection('projects')} 
             className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-            onClick={() => setMenuOpen(false)}
           >
             Projects
-          </a>
-          <a 
-            href="#contact" 
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact')} 
             className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-            onClick={() => setMenuOpen(false)}
           >
             Contact
-          </a>
+          </button>
           
           <div className="pt-6 flex justify-center">
             <SocialLinks size={24} />
