@@ -16,28 +16,28 @@ const StartupJourney = () => {
     {
       title: "Idea Phase",
       icon: <LightbulbIcon size={24} className="text-yellow-500" />,
-      description: "Identified the gap in educational resources for young students, especially in underprivileged areas.",
-      date: "Early 2024",
+      description: "Identified the gap in what is being taught at university and what is required in the industry. Talked to a lot of industry mentors and worked up possible solutions to this problem",
+      date: "Early 2022",
       color: "bg-yellow-500"
     },
     {
       title: "Founded Comed Learning",
       icon: <Flag size={24} className="text-green-500" />,
-      description: "Officially launched the ed-tech startup with a mission to provide quality education resources to all.",
-      date: "March 2024",
+      description: "Officially launched the ed-tech startup -Comed Learning with a mission to provide quality education beyound traditional colleges.",
+      date: "March 2022",
       color: "bg-green-500"
     },
     {
       title: "Initial Growth",
       icon: <TrendingUp size={24} className="text-blue-500" />,
-      description: "Expanded services to reach over 300 students across various demographics and regions.",
-      date: "March 2024 - Present",
+      description: "Expanded services to reach over 300 students across India. Conducted various workshops and courses on various soft skills critical to the industry",
+      date: "March 2022 - July 2023",
       color: "bg-blue-500"
     },
     {
-      title: "Future Vision",
+      title: "Where is it now?",
       icon: <Rocket size={24} className="text-purple-500" />,
-      description: "Working towards scaling our platform to reach 10,000 students by end of 2025, with plans to expand internationally.",
+      description: "Decided to shut down due to no product market fit. Even though it didn't go as planned I completely changed as a person due to the learnings along the way.",
       date: "2025 and beyond",
       color: "bg-purple-500"
     }

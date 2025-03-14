@@ -69,7 +69,8 @@
         "skills": [
           {"name": "Data Structures", "level": 85},
           {"name": "Algorithms", "level": 80},
-          {"name": "Probablity & Statics", "level": 75}
+          {"name": "Probablity & Statistics", "level": 75},
+          {"name": "Product Development", "level": 95}
         ],
         "color": "bg-red-500"
       }
