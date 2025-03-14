@@ -1,0 +1,195 @@
+{
+  "personalInfo": {
+    "name": "Yash Dedhia",
+    "title": "Software Developer",
+    "email": "yashdedhia1214@gmail.com",
+    "location": "Melbourne, Australia",
+    "about": [
+      "I'm Yash Dedhia, a problem solver at heart and a tech enthusiast who loves building innovative digital solutions. Whether it's developing scalable applications, optimizing systems, or crafting AI-powered tools, I thrive on turning ideas into reality. My journey spans across software development, entrepreneurship, and exploring cutting-edge technologies to make a real impact.", 
+      "Beyond my career, I'm an entrepreneur who founded Comed Learning, an ed-tech startup that has helped hundreds of students. But my passions don't stop at tech—I'm also an outdoor adventurer who finds joy in trekking through the wild, leading expeditions, and volunteering in wildlife conservation. Sports keep me energized, and when I'm not coding or exploring nature, you'll probably find me on the road, riding or driving toward my next adventure.", 
+      "For me, solving problems isn't just a job—it's a way of life, whether in tech, business, or the great outdoors."
+    ],
+    "tagline": "Building smart solutions, solving complex problems, and exploring the world—one challenge at a time."
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages",
+        "skills": [
+          {"name": "TypeScript", "level": 95},
+          {"name": "JavaScript", "level": 95},
+          {"name": "Java", "level": 90},
+          {"name": "C#", "level": 75},
+          {"name": "Python", "level": 90}
+        ],
+        "color": "bg-purple-500"
+      },
+      {
+        "name": "Frontend",
+        "skills": [
+          {"name": "TypeScript", "level": 95},
+          {"name": "JavaScript", "level": 95},
+          {"name": "Vue.js", "level": 95},
+          {"name": "React.js", "level": 88},
+          {"name": "Angular.js", "level": 70}
+        ],
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          {"name": "NodeJs", "level": 95},
+          {"name": ".NET Core", "level": 75}
+          
+        ],
+        "color": "bg-green-500"
+      },
+      {
+        "name": "Database",
+        "skills": [
+          {"name": "Supabase", "level": 95},
+          {"name": "PostgreSQL", "level": 95},
+          {"name": "MySQL", "level": 85},
+          {"name": "MongoDB", "level": 85}
+        ],
+        "color": "bg-yellow-500"
+      },
+      {
+        "name": "Tools",
+        "skills": [
+          {"name": "Git", "level": 95},
+          {"name": "GitHub", "level": 95},
+          {"name": "Postman", "level": 95},
+          {"name": "AWS", "level": 75}
+        ],
+        "color": "bg-purple-500"
+      },
+      {
+        "name": "Computer Science",
+        "skills": [
+          {"name": "Data Structures", "level": 85},
+          {"name": "Algorithms", "level": 80},
+          {"name": "Probablity & Statistics", "level": 75},
+          {"name": "Product Development", "level": 95}
+        ],
+        "color": "bg-red-500"
+      }
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Information Technology",
+      "institution": "RMIT University",
+      "year": "March 2024 - November 2025",
+      "description": "Above distinction scores in key subjects including Algorithms and Analysis, Advanced Programming. Active volunteer at RMIT Student Union and RMIT Indian Club.",
+      "subjects": [
+        "Algorithms and Analysis",
+        "Advanced Programming",
+        "Deep Learning",
+        "Database Systems",
+        "Practical Data Science with Python",
+        "AI"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering",
+      "institution": "Mumbai University",
+      "year": "July 2019 - June 2023",
+      "description": "Held committee positions in the Entrepreneurship Cell and Student Council.",
+      "subjects": [
+        "Data Structures",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "Database Management Systems"
+      ]
+    }
+  ],
+  "workExperience": [
+    {
+      "position": "Full Stack Developer",
+      "company": "Myluxfleet",
+      "period": "May 2024 - Present",
+      "description": "Led the development of the MVP, optimizing system performance. Built scalable solutions using Vue.js, Quasar, Supabase, and PostgreSQL.",
+      "technologies": ["Vue.js", "Quasar", "Supabase", "PostgreSQL"]
+    },
+    {
+      "position": "Software Developer",
+      "company": "Arcon Techsolutions",
+      "period": "July 2023 - February 2024",
+      "description": "Designed and implemented RESTful APIs within a microservice architecture. Conducted data analysis to align technical outputs with business goals.",
+      "technologies": ["C#", ".NET Core", "Angular", "MySQL"]
+    },
+    {
+      "position": "Software Developer",
+      "company": "Parth International",
+      "period": "April 2021 - June 2023",
+      "description": "Developed an inventory management system using React.js, Node.js, and MongoDB. Trained staff for system adoption and conducted system testing for accuracy and reliability.",
+      "technologies": ["React.js", "Express.js", "Node.js", "MongoDB"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Ai Browser",
+      "description": "Custom browser that summarizes web pages and provides AI chat with voice controls.",
+      "image": "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      "tags": ["Python", "OpenAI API"],
+      "github": "https://github.com/theyashdedhia/ezbrowser"
+    },
+    {
+      "title": "Quizzer",
+      "description": "Quiz application allowing users to take quizzes, view history, and manage accounts.",
+      "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80",
+      "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
+      "github": "https://github.com/theyashdedhia/Quizzer"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website built with modern web technologies to showcase my skills and projects.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
+      "tags": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "github": "https://github.com/theyashdedhia/portfolio"
+    }
+  ],
+  "extraCurricular": [
+    {
+      "role": "Founder",
+      "organization": "Comed Learning",
+      "period": "March 2024 - Present",
+      "description": "Founded an ed-tech startup providing services to over 300 students."
+    },
+    {
+      "role": "Hackathon Participant",
+      "description": "Participated in multiple 2-3 day hackathons, including runner-up at Monash University and second runner-up at RMIT University."
+    },
+    {
+      "role": "Wildlife Rescuer",
+      "organization": "RAWW",
+      "period": "August 2020 - February 2023",
+      "description": "Volunteered with India's largest urban wildlife conservation organization."
+    },
+    {
+      "role": "Trek Leader",
+      "organization": "Mountain Marks",
+      "period": "March 2017 - July 2023",
+      "description": "Organized and led 10+ treks across the Himalayan ranges."
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/theyashdedhia",
+      "ariaLabel": "GitHub Profile"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/theyashdedhia/",
+      "ariaLabel": "LinkedIn Profile"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:yashdedhia1214@gmail.com",
+      "ariaLabel": "Send an email"
+    }
+  ]
+}
