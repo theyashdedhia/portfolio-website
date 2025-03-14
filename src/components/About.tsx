@@ -1,11 +1,24 @@
 
 import { motion } from "framer-motion";
-import { CheckCircle, Briefcase, GraduationCap, Calendar } from "lucide-react";
+import { CheckCircle, Briefcase, GraduationCap, Calendar, ChevronDown, ChevronUp } from "lucide-react";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { useState } from "react";
 import data from "@/data.json";
 import SkillsVisualization from "./SkillsVisualization";
 import StartupJourney from "./StartupJourney";
 
 const About = () => {
+  // State to track which education panels are expanded
+  const [expandedEducation, setExpandedEducation] = useState<number[]>([]);
+
+  const toggleExpanded = (index: number) => {
+    setExpandedEducation(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index) 
+        : [...prev, index]
+    );
+  };
+
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container px-4 mx-auto">
@@ -73,6 +86,34 @@ const About = () => {
                       {education.field && <p className="text-primary font-medium">{education.field}</p>}
                       <p className="text-gray-600 mb-2">{education.institution}</p>
                       <p className="text-gray-700 text-sm">{education.description}</p>
+                      
+                      {/* Collapsible subjects section */}
+                      {education.subjects && education.subjects.length > 0 && (
+                        <Collapsible 
+                          open={expandedEducation.includes(index)} 
+                          onOpenChange={() => toggleExpanded(index)}
+                          className="mt-4"
+                        >
+                          <CollapsibleTrigger className="flex items-center justify-between w-full p-2 text-sm font-medium text-primary bg-primary/5 rounded-md hover:bg-primary/10 transition-colors">
+                            <span>Key Subjects</span>
+                            {expandedEducation.includes(index) ? (
+                              <ChevronUp className="h-4 w-4" />
+                            ) : (
+                              <ChevronDown className="h-4 w-4" />
+                            )}
+                          </CollapsibleTrigger>
+                          <CollapsibleContent className="mt-2 pl-4 border-l-2 border-primary/10">
+                            <ul className="space-y-2">
+                              {education.subjects.map((subject, subjIndex) => (
+                                <li key={subjIndex} className="flex items-start text-sm">
+                                  <CheckCircle className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                                  <span>{subject}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </CollapsibleContent>
+                        </Collapsible>
+                      )}
                     </div>
                   </motion.div>
                 ))}

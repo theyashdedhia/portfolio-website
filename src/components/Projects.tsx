@@ -1,42 +1,10 @@
 
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
-
-type Project = {
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  github?: string;
-  demo?: string;
-};
+import data from "@/data.json";
 
 const Projects = () => {
-  const projects: Project[] = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/project1",
-      demo: "https://project1-demo.com"
-    },
-    {
-      title: "Task Management App",
-      description: "A productivity app for managing tasks, projects, and deadlines with real-time updates and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/yourusername/project2",
-      demo: "https://project2-demo.com"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A weather application that provides real-time forecasts, historical data, and interactive maps for locations worldwide.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
-      tags: ["JavaScript", "Weather API", "Chart.js"],
-      github: "https://github.com/yourusername/project3"
-    }
-  ];
+  const projects = data.projects;
 
   const container = {
     hidden: { opacity: 0 },
@@ -123,18 +91,6 @@ const Projects = () => {
                       <span className="text-sm">Code</span>
                     </a>
                   )}
-                  
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-gray-700 hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={18} className="mr-1" />
-                      <span className="text-sm">Demo</span>
-                    </a>
-                  )}
                 </div>
               </div>
             </motion.div>
@@ -143,7 +99,7 @@ const Projects = () => {
         
         <div className="text-center mt-12">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/theyashdedhia"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-primary transition-colors border-2 border-primary/50 rounded-full hover:bg-primary/5"

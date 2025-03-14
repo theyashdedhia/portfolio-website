@@ -1,3 +1,4 @@
+
 {
   "personalInfo": {
     "name": "Yash Dedhia",
@@ -10,40 +11,92 @@
       "I thrive on solving complex problems and have a keen interest in full-stack development, cloud computing, and AI-driven solutions."
     ]
   },
-  "skills": [
-    "TypeScript",
-    "JavaScript",
-    "Python",
-    "Java",
-    "C#",
-    "Vue.js",
-    "React.js",
-    "Angular.js",
-    ".NET Core",
-    "Supabase",
-    "PostgreSQL",
-    "MySQL",
-    "MongoDB",
-    "Git",
-    "GitHub",
-    "Data Structures",
-    "Algorithms",
-    "TensorFlow",
-    "Keras"
-  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "skills": [
+          {"name": "TypeScript", "level": 95},
+          {"name": "JavaScript", "level": 95},
+          {"name": "Vue.js", "level": 95},
+          {"name": "React.js", "level": 88},
+          {"name": "Angular.js", "level": 70}
+        ],
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          {"name": "Java", "level": 90},
+          {"name": "C#", "level": 75},
+          {"name": ".NET Core", "level": 75},
+          {"name": "Python", "level": 90}
+        ],
+        "color": "bg-green-500"
+      },
+      {
+        "name": "Database",
+        "skills": [
+          {"name": "Supabase", "level": 95},
+          {"name": "PostgreSQL", "level": 95},
+          {"name": "MySQL", "level": 85},
+          {"name": "MongoDB", "level": 85}
+        ],
+        "color": "bg-yellow-500"
+      },
+      {
+        "name": "Tools",
+        "skills": [
+          {"name": "Git", "level": 95},
+          {"name": "GitHub", "level": 95}
+        ],
+        "color": "bg-purple-500"
+      },
+      {
+        "name": "Computer Science",
+        "skills": [
+          {"name": "Data Structures", "level": 85},
+          {"name": "Algorithms", "level": 80}
+        ],
+        "color": "bg-red-500"
+      },
+      {
+        "name": "AI & ML",
+        "skills": [
+          {"name": "TensorFlow", "level": 60},
+          {"name": "Keras", "level": 60}
+        ],
+        "color": "bg-indigo-500"
+      }
+    ]
+  },
   "education": [
     {
       "degree": "Master of Information Technology",
       "institution": "RMIT University",
       "year": "March 2024 - November 2025",
-      "description": "Above distinction scores in key subjects including Algorithms and Analysis, Advanced Programming. Active volunteer at RMIT Student Union and RMIT Indian Club."
+      "description": "Above distinction scores in key subjects including Algorithms and Analysis, Advanced Programming. Active volunteer at RMIT Student Union and RMIT Indian Club.",
+      "subjects": [
+        "Algorithms and Analysis",
+        "Advanced Programming",
+        "Distributed Systems",
+        "Database Systems",
+        "Software Engineering Fundamentals"
+      ]
     },
     {
       "degree": "Bachelor of Engineering",
       "field": "Computer Engineering",
       "institution": "Mumbai University",
       "year": "July 2019 - June 2023",
-      "description": "Held committee positions in the Entrepreneurship Cell and Student Council."
+      "description": "Held committee positions in the Entrepreneurship Cell and Student Council.",
+      "subjects": [
+        "Data Structures",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "Database Management Systems"
+      ]
     }
   ],
   "workExperience": [
@@ -71,16 +124,25 @@
   ],
   "projects": [
     {
-      "name": "Ai Browser",
-      "url": "https://github.com/theyashdedhia/ezbrowser",
+      "title": "Ai Browser",
       "description": "Custom browser that summarizes web pages and provides AI chat with voice controls.",
-      "technologies": ["Python3", "OpenAI API"]
+      "image": "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      "tags": ["Python", "OpenAI API"],
+      "github": "https://github.com/theyashdedhia/ezbrowser"
     },
     {
-      "name": "Quizzer",
-      "url": "https://github.com/theyashdedhia/Quizzer",
+      "title": "Quizzer",
       "description": "Quiz application allowing users to take quizzes, view history, and manage accounts.",
-      "technologies": ["MongoDB", "Express.js", "React.js", "Node.js"]
+      "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80",
+      "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
+      "github": "https://github.com/theyashdedhia/Quizzer"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website built with modern web technologies to showcase my skills and projects.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
+      "tags": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "github": "https://github.com/theyashdedhia/portfolio"
     }
   ],
   "extraCurricular": [
