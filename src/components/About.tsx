@@ -83,8 +83,7 @@ const About = () => {
                         <span className="text-sm text-gray-600">{education.year}</span>
                       </div>
                       <h4 className="text-xl font-semibold">{education.degree}</h4>
-                      {education.field && <p className="text-primary font-medium">{education.field}</p>}
-                      <p className="text-gray-600 mb-2">{education.institution}</p>
+                      {<p className="text-primary font-medium">{education.institution}</p>}
                       <p className="text-gray-700 text-sm">{education.description}</p>
                       
                       {/* Collapsible subjects section */}

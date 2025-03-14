@@ -71,8 +71,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg text-gray-700 mb-8">
-            I craft elegant solutions through code. Currently pursuing my Master's degree
-            and building digital experiences that make a difference.
+            {data.personalInfo.tagline}
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">

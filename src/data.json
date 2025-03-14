@@ -1,4 +1,3 @@
-
 {
   "personalInfo": {
     "name": "Yash Dedhia",
@@ -6,10 +5,11 @@
     "email": "yashdedhia1214@gmail.com",
     "location": "Melbourne, Australia",
     "about": [
-      "I'm a passionate software developer with a strong foundation in computer science and a love for building scalable and efficient applications.",
-      "Currently pursuing my Master's in Information Technology at RMIT University with a focus on algorithms, advanced programming, and distributed systems.",
-      "I thrive on solving complex problems and have a keen interest in full-stack development, cloud computing, and AI-driven solutions."
-    ]
+      "I’m Yash Dedhia, a problem solver at heart and a tech enthusiast who loves building innovative digital solutions. Whether it’s developing scalable applications, optimizing systems, or crafting AI-powered tools, I thrive on turning ideas into reality. My journey spans across software development, entrepreneurship, and exploring cutting-edge technologies to make a real impact.", 
+      "Beyond my career, I’m an entrepreneur who founded Comed Learning, an ed-tech startup that has helped hundreds of students. But my passions don’t stop at tech—I’m also an outdoor adventurer who finds joy in trekking through the wild, leading expeditions, and volunteering in wildlife conservation. Sports keep me energized, and when I’m not coding or exploring nature, you’ll probably find me on the road, riding or driving toward my next adventure.", 
+      "For me, solving problems isn’t just a job—it’s a way of life, whether in tech, business, or the great outdoors."
+    ],
+    "tagline": "Building smart solutions, solving complex problems, and exploring the world—one challenge at a time."
   },
   "skills": {
     "categories": [
@@ -79,14 +79,14 @@
       "subjects": [
         "Algorithms and Analysis",
         "Advanced Programming",
-        "Distributed Systems",
+        "Deep Learning",
         "Database Systems",
-        "Software Engineering Fundamentals"
+        "Practical Data Science with Python",
+        "AI"
       ]
     },
     {
       "degree": "Bachelor of Engineering",
-      "field": "Computer Engineering",
       "institution": "Mumbai University",
       "year": "July 2019 - June 2023",
       "description": "Held committee positions in the Entrepreneurship Cell and Student Council.",
