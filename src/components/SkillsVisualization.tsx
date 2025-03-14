@@ -1,18 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Server, Database, Cpu, Book, BrainCircuit } from 'lucide-react';
 import data from '@/data.json';
-
-// Map category names to icons
-const categoryIcons: Record<string, JSX.Element> = {
-  'Frontend': <Code className="h-6 w-6" />,
-  'Backend': <Server className="h-6 w-6" />,
-  'Database': <Database className="h-6 w-6" />,
-  'Tools': <Cpu className="h-6 w-6" />,
-  'Computer Science': <Book className="h-6 w-6" />,
-  'AI & ML': <BrainCircuit className="h-6 w-6" />
-};
 
 // Predefined color palette to use in rotation
 const colorPalette = [
@@ -21,7 +10,6 @@ const colorPalette = [
   'bg-yellow-500',  // Yellow
   'bg-purple-500',  // Purple
   'bg-red-500',     // Red
-  'bg-indigo-500'   // Indigo
 ];
 
 const SkillsVisualization = () => {
@@ -61,14 +49,13 @@ const SkillsVisualization = () => {
           <button
             key={category.name}
             onClick={() => setActiveCategory(category.name)}
-            className={`flex flex-col items-center justify-center p-4 rounded-lg transition-all ${
+            className={`p-4 rounded-lg transition-all text-center ${
               activeCategory === category.name 
                 ? `${getCategoryColor(category.name)} text-white shadow-lg scale-105` 
                 : 'bg-gray-100 hover:bg-gray-200'
             }`}
           >
-            {categoryIcons[category.name]}
-            <span className="mt-2 text-sm font-medium">{category.name}</span>
+            <span className="font-medium">{category.name}</span>
           </button>
         ))}
       </div>

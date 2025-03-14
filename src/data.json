@@ -5,9 +5,9 @@
     "email": "yashdedhia1214@gmail.com",
     "location": "Melbourne, Australia",
     "about": [
-      "I’m Yash Dedhia, a problem solver at heart and a tech enthusiast who loves building innovative digital solutions. Whether it’s developing scalable applications, optimizing systems, or crafting AI-powered tools, I thrive on turning ideas into reality. My journey spans across software development, entrepreneurship, and exploring cutting-edge technologies to make a real impact.", 
-      "Beyond my career, I’m an entrepreneur who founded Comed Learning, an ed-tech startup that has helped hundreds of students. But my passions don’t stop at tech—I’m also an outdoor adventurer who finds joy in trekking through the wild, leading expeditions, and volunteering in wildlife conservation. Sports keep me energized, and when I’m not coding or exploring nature, you’ll probably find me on the road, riding or driving toward my next adventure.", 
-      "For me, solving problems isn’t just a job—it’s a way of life, whether in tech, business, or the great outdoors."
+      "I'm Yash Dedhia, a problem solver at heart and a tech enthusiast who loves building innovative digital solutions. Whether it's developing scalable applications, optimizing systems, or crafting AI-powered tools, I thrive on turning ideas into reality. My journey spans across software development, entrepreneurship, and exploring cutting-edge technologies to make a real impact.", 
+      "Beyond my career, I'm an entrepreneur who founded Comed Learning, an ed-tech startup that has helped hundreds of students. But my passions don't stop at tech—I'm also an outdoor adventurer who finds joy in trekking through the wild, leading expeditions, and volunteering in wildlife conservation. Sports keep me energized, and when I'm not coding or exploring nature, you'll probably find me on the road, riding or driving toward my next adventure.", 
+      "For me, solving problems isn't just a job—it's a way of life, whether in tech, business, or the great outdoors."
     ],
     "tagline": "Building smart solutions, solving complex problems, and exploring the world—one challenge at a time."
   },
@@ -72,15 +72,6 @@
           {"name": "Probablity & Statics", "level": 75}
         ],
         "color": "bg-red-500"
-      },
-      {
-        "name": "AI & ML",
-        "skills": [
-          {"name": "TensorFlow", "level": 60},
-          {"name": "Keras", "level": 60},
-          {"name": "Deep Learning", "level": 65}
-        ],
-        "color": "bg-indigo-500"
       }
     ]
   },
