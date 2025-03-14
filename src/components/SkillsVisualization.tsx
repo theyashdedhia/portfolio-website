@@ -24,8 +24,10 @@ const SkillsVisualization = () => {
   };
 
   const activeSkills = getSkillsForActiveCategory();
+  
   const getCategoryColor = (name: string) => {
-    return skillCategories.find(cat => cat.name === name)?.color || 'bg-gray-500';
+    const category = skillCategories.find(cat => cat.name === name);
+    return category?.color || 'bg-gray-500';
   };
 
   return (
@@ -35,6 +37,7 @@ const SkillsVisualization = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
       className="my-12"
+      id="skills"
     >
       <h3 className="text-2xl font-bold mb-8">Skills</h3>
       
