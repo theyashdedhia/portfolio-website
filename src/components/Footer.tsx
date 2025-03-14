@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="text-gray-700 mb-6 max-w-md">
-            I am always eager to collaborate on innovative projects and connect with like-minded professionals. Whether it's discussing technology, exploring new ideas, or building impactful solutions, I am open to freelance opportunities and consulting engagements. Feel free to reach out!
+            If you're looking to create amazing digital products, contact me.
             </p>
             
             <div className="space-y-3">
