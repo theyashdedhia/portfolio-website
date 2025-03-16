@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DownloadButton from "./DownloadButton";
 import data from "@/data.json";
+import yashPic from "/YashPicTransparent.png"
+import resume from "/resume.pdf"
 
 const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -50,7 +52,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-blue-300/30 animate-spin-slow -z-10" />
           <img
             ref={imageRef}
-            src="/YashPicTransparent.png"
+            src={yashPic}
             alt="Profile"
             className="w-full h-full object-cover transition-transform duration-75"
           />
@@ -75,7 +77,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center">
-            <DownloadButton text="Download CV" filePath="/resume.pdf" />
+            <DownloadButton text="Download CV" filePath={resume}/>
           </div>
         </motion.div>
       </div>

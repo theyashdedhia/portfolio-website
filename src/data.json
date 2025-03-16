@@ -148,7 +148,7 @@
       "description": "A responsive portfolio website built with modern web technologies to showcase my skills and projects.",
       "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
       "tags": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "github": "https://github.com/theyashdedhia/portfolio"
+      "github": "https://github.com/theyashdedhia/portfolio-website"
     }
   ],
   "extraCurricular": [
