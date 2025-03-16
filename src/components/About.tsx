@@ -4,6 +4,7 @@ import { CheckCircle, Briefcase, GraduationCap, Calendar, ChevronDown, ChevronUp
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useState } from "react";
 import data from "@/data.json";
+import SkillsVisualization from "./SkillsVisualization";
 import StartupJourney from "./StartupJourney";
 
 const About = () => {
@@ -51,6 +52,8 @@ const About = () => {
               </p>
             ))}
           </motion.div>
+          
+          <SkillsVisualization />
           
           <div className="space-y-12">
             <motion.div
