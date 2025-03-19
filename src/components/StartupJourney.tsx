@@ -11,37 +11,37 @@ const StartupJourney = () => {
     item.description?.toLowerCase().includes("startup")
   );
   
-  // Define milestones - you can customize these based on your own journey
-  const milestones = [
-    {
-      title: "Idea Phase",
-      icon: <LightbulbIcon size={24} className="text-yellow-500" />,
-      description: "Identified the gap in what is being taught at university and what is required in the industry. Talked to a lot of industry mentors and worked up possible solutions to this problem",
-      date: "Early 2022",
-      color: "bg-yellow-500"
-    },
-    {
-      title: "Founded Comed Learning",
-      icon: <Flag size={24} className="text-green-500" />,
-      description: "Officially launched the ed-tech startup -Comed Learning with a mission to provide quality education beyound traditional colleges.",
-      date: "March 2022",
-      color: "bg-green-500"
-    },
-    {
-      title: "Initial Growth",
-      icon: <TrendingUp size={24} className="text-blue-500" />,
-      description: "Expanded services to reach over 300 students across India. Conducted various workshops and courses on various soft skills critical to the industry",
-      date: "March 2022 - July 2023",
-      color: "bg-blue-500"
-    },
-    {
-      title: "Where is it now?",
-      icon: <Rocket size={24} className="text-purple-500" />,
-      description: "Decided to shut down due to no product market fit. Even though it didn't go as planned I completely changed as a person due to the learnings along the way.",
-      date: "2025 and beyond",
-      color: "bg-purple-500"
-    }
-  ];
+  // Define milestones - custom journey timeline
+const milestones = [
+  {
+    title: "Idea Phase",
+    icon: <LightbulbIcon size={24} className="text-yellow-500" />,
+    description: "Identified the gap between university curriculum and industry requirements. Conducted extensive research with industry mentors to develop potential solutions addressing this educational disconnect.",
+    date: "Early 2022",
+    color: "bg-yellow-500"
+  },
+  {
+    title: "Founded Comed Learning",
+    icon: <Flag size={24} className="text-green-500" />,
+    description: "Officially launched Comed Learning as an ed-tech startup with a clear mission: bridging the skills gap by providing industry-relevant education beyond traditional college frameworks.",
+    date: "March 2022",
+    color: "bg-green-500"
+  },
+  {
+    title: "Growth & Impact",
+    icon: <TrendingUp size={24} className="text-blue-500" />,
+    description: "Expanded our reach to over 300 students across India, delivering specialized workshops and courses focused on critical industry soft skills that traditional education often overlooks.",
+    date: "March 2022 - July 2023",
+    color: "bg-blue-500"
+  },
+  {
+    title: "Transformation & Legacy",
+    icon: <Rocket size={24} className="text-purple-500" />,
+    description: "While Comed Learning concluded its operations due to product-market fit challenges, the journey transformed my approach to innovation and problem-solving. The venture's greatest success was the invaluable entrepreneurial wisdom gained and connections built that continue to shape my professional path today.",
+    date: "Present & Future",
+    color: "bg-purple-500"
+  }
+];
 
   return (
     <motion.div
