@@ -1,190 +1,160 @@
 {
   "personalInfo": {
     "name": "Yash Dedhia",
-    "title": "Software Developer",
-    "email": "yashdedhia1214@gmail.com",
+    "title": "Founding AI Engineer",
     "location": "Melbourne, Australia",
-    "about": [
-      "I'm Yash Dedhia, a problem solver at heart and a tech enthusiast who loves building innovative digital solutions. Whether it's developing scalable applications, optimizing systems, or crafting AI-powered tools, I thrive on turning ideas into reality. My journey spans across software development, entrepreneurship, and exploring cutting-edge technologies to make a real impact.", 
-      "Beyond my career, I'm an entrepreneur who founded Comed Learning, an ed-tech startup that has helped hundreds of students. But my passions don't stop at tech—I'm also an outdoor adventurer who finds joy in trekking through the wild, leading expeditions, and volunteering in wildlife conservation. Sports keep me energized, and when I'm not coding or exploring nature, you'll probably find me on the road, riding or driving toward my next adventure.", 
-      "For me, solving problems isn't just a job—it's a way of life, whether in tech, business, or the great outdoors."
-    ],
-    "tagline": "Building smart solutions, solving complex problems, and exploring the world—one challenge at a time."
+    "email": "yashdedhia1214@gmail.com",
+    "statement": "I build agentic AI systems that hold up in production.",
+    "intro": "Forward-deployed AI engineer — I sit with stakeholders to scope the problem, then design, ship, and operate the system end to end. Most recently Founding AI Engineer at AI Squared. Founder of ShareMyVault and AgentLens.",
+    "focus": ["LangGraph", "RAG pipelines", "Multi-agent orchestration"]
   },
-  "skills": {
-    "categories": [
-      {
-        "name": "Languages",
-        "skills": [
-          {"name": "TypeScript", "level": 95},
-          {"name": "JavaScript", "level": 95},
-          {"name": "Java", "level": 90},
-          {"name": "C#", "level": 75},
-          {"name": "Python", "level": 90}
-        ],
-        "color": "bg-purple-500"
-      },
-      {
-        "name": "Frontend",
-        "skills": [
-          {"name": "TypeScript", "level": 95},
-          {"name": "JavaScript", "level": 95},
-          {"name": "Vue.js", "level": 95},
-          {"name": "React.js", "level": 88},
-          {"name": "Angular.js", "level": 70}
-        ],
-        "color": "bg-blue-500"
-      },
-      {
-        "name": "Backend",
-        "skills": [
-          {"name": "NodeJs", "level": 95},
-          {"name": ".NET Core", "level": 75}
-          
-        ],
-        "color": "bg-green-500"
-      },
-      {
-        "name": "Database",
-        "skills": [
-          {"name": "Supabase", "level": 95},
-          {"name": "PostgreSQL", "level": 95},
-          {"name": "MySQL", "level": 85},
-          {"name": "MongoDB", "level": 85}
-        ],
-        "color": "bg-yellow-500"
-      },
-      {
-        "name": "Tools",
-        "skills": [
-          {"name": "Git", "level": 95},
-          {"name": "GitHub", "level": 95},
-          {"name": "Postman", "level": 95},
-          {"name": "AWS", "level": 75}
-        ],
-        "color": "bg-purple-500"
-      },
-      {
-        "name": "Computer Science",
-        "skills": [
-          {"name": "Data Structures", "level": 85},
-          {"name": "Algorithms", "level": 80},
-          {"name": "Probablity & Statistics", "level": 75},
-          {"name": "Product Development", "level": 95}
-        ],
-        "color": "bg-red-500"
-      }
-    ]
-  },
+  "experience": [
+    {
+      "role": "Founding AI Engineer",
+      "company": "AI Squared",
+      "location": "Melbourne",
+      "period": "May 2024 — Jun 2026",
+      "summary": "Forward Deployed Engineer, partnering with stakeholders to scope requirements, design AI solutions, and deliver production-ready implementations.",
+      "bullets": [
+        "Architected end-to-end agentic workflows with LangGraph — multi-step reasoning, planning, and task execution across multiple cooperating agents.",
+        "Designed RAG pipelines combining semantic search with contextual retrieval to improve response accuracy and reduce hallucinations.",
+        "Built asynchronous workflow execution with state management and memory persistence for long-running agents.",
+        "Cut redundant database queries by 70% with a high-performance caching architecture on Supabase and PostgreSQL."
+      ],
+      "stack": ["Python", "LangGraph", "RAG", "Supabase", "PostgreSQL"]
+    },
+    {
+      "role": "AI Engineer",
+      "company": "Australian Red Cross Lifeblood",
+      "location": "Melbourne",
+      "period": "Jul 2025 — Nov 2025",
+      "summary": "Work Integrated Learning placement through the RMIT Master of Information Technology.",
+      "bullets": [
+        "Developed a serverless GenAI web application deployed across AWS and Azure.",
+        "Implemented RAG pipelines on vector databases to retrieve and contextualise data from multiple file types.",
+        "Integrated the RAG pipeline with an internal chatbot for knowledge-based query handling.",
+        "Ensured secure data processing, low-latency responses, and production-grade availability."
+      ],
+      "stack": ["AWS", "Azure", "Vector databases", "RAG"]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Arcon Techsolutions",
+      "location": "Mumbai",
+      "period": "Jul 2023 — Feb 2024",
+      "summary": "Backend engineering on enterprise security-analytics products.",
+      "bullets": [
+        "Developed and maintained enterprise-grade backend APIs with .NET Core and MySQL.",
+        "Architected and optimised RESTful microservices for security-analytics products.",
+        "Improved API performance by 30% and shipped role-based authentication modules.",
+        "Worked with QA and DevOps on CI/CD integration and deployment."
+      ],
+      "stack": ["C#", ".NET Core", "MySQL", "REST"]
+    }
+  ],
+  "products": [
+    {
+      "name": "ShareMyVault",
+      "role": "Founder",
+      "url": "https://www.sharemyvault.com/",
+      "urlLabel": "sharemyvault.com",
+      "tagline": "Estate planning people can actually finish.",
+      "description": "AI-powered digital estate planning that walks seniors and non-technical users through wills and legacy planning in plain conversation.",
+      "bullets": [
+        "Cross-platform Flutter app with on-device AI inference — private, low-latency, and working without a connection.",
+        "Conversations become professionally formatted, legally structured wills and estate documents.",
+        "Zero-knowledge, privacy-first backend on Supabase and PostgreSQL with encrypted document storage."
+      ],
+      "stack": ["Flutter", "On-device AI", "Supabase", "PostgreSQL"]
+    },
+    {
+      "name": "AgentLens",
+      "role": "Founder",
+      "url": "https://agentlens.in",
+      "urlLabel": "agentlens.in",
+      "tagline": "See your website the way AI does.",
+      "description": "A GenAI platform that evaluates websites for AI-search readiness — accessibility, structured data, crawlability, and LLM interpretability.",
+      "bullets": [
+        "Autonomous crawling pipelines: robots.txt parsing, multi-page exploration, metadata extraction, WCAG audits.",
+        "RAG over real-time web data with OpenAI LLMs for context-aware site assessments.",
+        "Simulation agents that emulate how ChatGPT, Gemini, and Perplexity read and retrieve a site."
+      ],
+      "stack": ["OpenAI", "RAG", "Autonomous agents", "Next.js"]
+    }
+  ],
+  "sideBuilds": [
+    {
+      "name": "AI Browser",
+      "description": "Custom browser with page summarisation and voice-controlled AI chat.",
+      "url": "https://github.com/theyashdedhia/ezbrowser"
+    },
+    {
+      "name": "Quizzer",
+      "description": "Full-stack quiz platform with accounts and attempt history.",
+      "url": "https://github.com/theyashdedhia/Quizzer"
+    },
+    {
+      "name": "This site",
+      "description": "React, Tailwind, and framer-motion — source on GitHub.",
+      "url": "https://github.com/theyashdedhia/portfolio-website"
+    }
+  ],
+  "toolchain": [
+    {
+      "group": "Languages",
+      "items": ["Python", "TypeScript", "Java", "C#"]
+    },
+    {
+      "group": "AI systems",
+      "items": ["LangGraph", "RAG", "Multi-agent orchestration", "Vector databases"]
+    },
+    {
+      "group": "Cloud & data",
+      "items": ["AWS", "Azure", "Supabase", "PostgreSQL"]
+    },
+    {
+      "group": "Frameworks",
+      "items": ["Next.js", "Node.js", "Vue.js", "Flutter", ".NET Core"]
+    }
+  ],
   "education": [
     {
-      "degree": "Master of Information Technology",
+      "degree": "Master of Information Technology (AI)",
       "institution": "RMIT University",
-      "year": "March 2024 - November 2025",
-      "description": "Above distinction scores in key subjects including Algorithms and Analysis, Advanced Programming. Active volunteer at RMIT Student Union and RMIT Indian Club.",
-      "subjects": [
-        "Algorithms and Analysis",
-        "Advanced Programming",
-        "Deep Learning",
-        "Database Systems",
-        "Practical Data Science with Python",
-        "AI"
-      ]
+      "location": "Melbourne",
+      "period": "2024 — 2025"
     },
     {
-      "degree": "Bachelor of Engineering",
+      "degree": "Bachelor of Engineering, Computer Engineering",
       "institution": "Mumbai University",
-      "year": "July 2019 - June 2023",
-      "description": "Held committee positions in the Entrepreneurship Cell and Student Council.",
-      "subjects": [
-        "Data Structures",
-        "Operating Systems",
-        "Computer Networks",
-        "Software Engineering",
-        "Database Management Systems"
-      ]
+      "location": "Mumbai",
+      "period": "2019 — 2023"
     }
   ],
-  "workExperience": [
-    {
-      "position": "Full Stack Developer",
-      "company": "Myluxfleet",
-      "period": "May 2024 - Present",
-      "description": "Led the development of the MVP, optimizing system performance. Built scalable solutions using Vue.js, Quasar, Supabase, and PostgreSQL.",
-      "technologies": ["Vue.js", "Quasar", "Supabase", "PostgreSQL"]
-    },
-    {
-      "position": "Software Developer",
-      "company": "Arcon Techsolutions",
-      "period": "July 2023 - February 2024",
-      "description": "Designed and implemented RESTful APIs within a microservice architecture. Conducted data analysis to align technical outputs with business goals.",
-      "technologies": ["C#", ".NET Core", "Angular", "MySQL"]
-    },
-    {
-      "position": "Software Developer",
-      "company": "Parth International",
-      "period": "April 2021 - June 2023",
-      "description": "Developed an inventory management system using React.js, Node.js, and MongoDB. Trained staff for system adoption and conducted system testing for accuracy and reliability.",
-      "technologies": ["React.js", "Express.js", "Node.js", "MongoDB"]
-    }
-  ],
-  "projects": [
-    {
-      "title": "Ai Browser",
-      "description": "Custom browser that summarizes web pages and provides AI chat with voice controls.",
-      "image": "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      "tags": ["Python", "OpenAI API"],
-      "github": "https://github.com/theyashdedhia/ezbrowser"
-    },
-    {
-      "title": "Quizzer",
-      "description": "Quiz application allowing users to take quizzes, view history, and manage accounts.",
-      "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1076&q=80",
-      "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
-      "github": "https://github.com/theyashdedhia/Quizzer"
-    },
-    {
-      "title": "Portfolio Website",
-      "description": "A responsive portfolio website built with modern web technologies to showcase my skills and projects.",
-      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
-      "tags": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "github": "https://github.com/theyashdedhia/portfolio"
-    }
-  ],
-  "extraCurricular": [
-    {
-      "role": "Founder",
-      "organization": "Comed Learning",
-      "period": "March 2024 - Present",
-      "description": "Founded an ed-tech startup providing services to over 300 students."
-    },
-    {
-      "role": "Hackathon Participant",
-      "description": "Participated in multiple 2-3 day hackathons, including runner-up at Monash University and second runner-up at RMIT University."
-    },
+  "fieldWork": [
     {
       "role": "Wildlife Rescuer",
       "organization": "RAWW",
-      "period": "August 2020 - February 2023",
-      "description": "Volunteered with India's largest urban wildlife conservation organization."
+      "location": "Mumbai",
+      "description": "Rescue, rehabilitation, and care across species with India's largest urban wildlife conservation organisation. Led urban-wildlife awareness drives and trained volunteers in safe handling and emergency response."
     },
     {
       "role": "Trek Leader",
       "organization": "Mountain Marks",
-      "period": "March 2017 - July 2023",
-      "description": "Organized and led 10+ treks across the Himalayan ranges."
+      "location": "Western Ghats",
+      "description": "Organised and led multiple high-altitude treks — logistics, safety, and route planning for large groups, with an emphasis on leadership and endurance."
     }
   ],
   "socialLinks": [
     {
       "name": "GitHub",
       "url": "https://github.com/theyashdedhia",
-      "ariaLabel": "GitHub Profile"
+      "ariaLabel": "GitHub profile"
     },
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/theyashdedhia/",
-      "ariaLabel": "LinkedIn Profile"
+      "ariaLabel": "LinkedIn profile"
     },
     {
       "name": "Email",

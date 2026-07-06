@@ -1,136 +1,109 @@
-
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
+import { Download } from "lucide-react";
 import { cn } from "@/lib/utils";
-import SocialLinks from './SocialLinks';
+
+const NAV = [
+  { label: "Work", id: "work" },
+  { label: "Products", id: "products" },
+  { label: "Toolchain", id: "toolchain" },
+  { label: "Contact", id: "contact" },
+];
+
+const RESUME_HREF = `${import.meta.env.BASE_URL}resume.pdf`;
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [scrolled]);
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300",
-        scrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
-          : "bg-transparent"
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        scrolled || menuOpen
+          ? "border-b border-border bg-background/85 backdrop-blur-md"
+          : "border-b border-transparent bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a 
-          href="#" 
-          className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
-        >
-          DevPortfolio
+      <div className="container flex h-16 items-center justify-between">
+        <a href="#" className="flex items-baseline gap-3" aria-label="Back to top">
+          <span className="display text-lg font-bold">Yash Dedhia</span>
+          <span className="fig-label hidden sm:inline">AI Engineer</span>
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <button onClick={() => scrollToSection('about')} className="text-sm font-medium transition-colors hover:text-primary">
-            About
-          </button>
-          <button onClick={() => scrollToSection('projects')} className="text-sm font-medium transition-colors hover:text-primary">
-            Projects
-          </button>
-          <button onClick={() => scrollToSection('contact')} className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
-          </button>
-          
-          <div className="pl-4 border-l border-gray-200">
-            <SocialLinks size={18} />
-          </div>
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
+          {NAV.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="font-mono text-xs uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:text-primary"
+            >
+              {item.label}
+            </button>
+          ))}
+          <a
+            href={RESUME_HREF}
+            download="Yash-Dedhia-Resume.pdf"
+            className="inline-flex items-center gap-2 rounded-md border border-primary/40 px-3.5 py-2 font-mono text-xs uppercase tracking-[0.14em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+          >
+            Résumé
+            <Download size={13} strokeWidth={2.2} />
+          </a>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden flex items-center"
+        {/* Mobile menu toggle */}
+        <button
+          className="flex h-10 w-10 items-center justify-center md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             {menuOpen ? (
-              <path
-                d="M18 6L6 18M6 6L18 18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+              <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             ) : (
-              <path
-                d="M4 6H20M4 12H20M4 18H20"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+              <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             )}
           </svg>
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       <div
         className={cn(
-          "fixed inset-0 top-[72px] bg-white/95 backdrop-blur-sm flex flex-col p-6 transition-all duration-300 ease-in-out transform md:hidden",
-          menuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+          "overflow-hidden border-border bg-background/95 backdrop-blur-md transition-[max-height] duration-300 ease-in-out md:hidden",
+          menuOpen ? "max-h-96 border-b" : "max-h-0"
         )}
       >
-        <nav className="flex flex-col space-y-6 text-center mt-8">
-          <button 
-            onClick={() => scrollToSection('about')} 
-            className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
+        <nav className="container flex flex-col py-4" aria-label="Mobile">
+          {NAV.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="border-b border-border/60 py-3.5 text-left font-mono text-sm uppercase tracking-[0.14em] text-foreground/80 last:border-0 hover:text-primary"
+            >
+              {item.label}
+            </button>
+          ))}
+          <a
+            href={RESUME_HREF}
+            download="Yash-Dedhia-Resume.pdf"
+            className="mt-3 inline-flex w-fit items-center gap-2 rounded-md border border-primary/40 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.14em] text-primary"
           >
-            About
-          </button>
-          <button 
-            onClick={() => scrollToSection('skills')} 
-            className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-          >
-            Skills
-          </button>
-          <button 
-            onClick={() => scrollToSection('projects')} 
-            className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-          >
-            Projects
-          </button>
-          <button 
-            onClick={() => scrollToSection('contact')} 
-            className="text-lg py-2 border-b border-gray-100 hover:text-primary transition-colors"
-          >
-            Contact
-          </button>
-          
-          <div className="pt-6 flex justify-center">
-            <SocialLinks size={24} />
-          </div>
+            Résumé <Download size={13} />
+          </a>
         </nav>
       </div>
     </header>

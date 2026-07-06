@@ -1,69 +1,53 @@
-# Welcome to your Lovable project
+# Yash Dedhia — Portfolio
 
-## Project info
+**Live site: [theyashdedhia.github.io/portfolio-website](https://theyashdedhia.github.io/portfolio-website/)**
 
-**URL**: https://lovable.dev/projects/e555c2f4-eb36-4e71-8664-9ecf9a37c338
+My personal portfolio — I'm a Founding AI Engineer based in Melbourne, building agentic
+AI systems with LangGraph and RAG, and the founder of
+[ShareMyVault](https://www.sharemyvault.com/) and [AgentLens](https://agentlens.in).
 
-## How can I edit this code?
+## About the site
 
-There are several ways of editing your application.
+The site is designed as an *engineer's field notebook*: a graph-paper background, ink
+and pine-green palette, sections numbered like figures in an engineering document, and
+IBM Plex Mono annotations throughout. The hero is an animated schematic of a
+production agentic workflow — router, retriever, vector store, agent loop, tools, and
+guardrails — drawn in SVG with traveling pulses.
 
-**Use Lovable**
+What's inside:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e555c2f4-eb36-4e71-8664-9ecf9a37c338) and start prompting.
+- **Experience** — AI Squared, Australian Red Cross Lifeblood, Arcon Techsolutions
+- **Founded products** — ShareMyVault and AgentLens, with live links
+- **Toolchain** — languages, AI systems, cloud, and frameworks I work with
+- **Education** — RMIT University and Mumbai University
+- **Field work** — wildlife rescue with RAWW and trek leading in the Western Ghats
+- **Résumé** — downloadable PDF, always current
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech stack
 
-**Use your preferred IDE**
+- [Vite](https://vitejs.dev) + React 18 + TypeScript
+- Tailwind CSS with a custom design-token system (+ shadcn/ui primitives)
+- framer-motion for scroll reveals and the schematic draw-in animation
+- Respects `prefers-reduced-motion`; fully responsive down to mobile
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Run locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm install
+npm run dev        # http://localhost:8080
 ```
 
-**Edit a file directly in GitHub**
+## Editing content
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+All copy lives in [`src/data.json`](src/data.json) — roles, products, skills, and links
+can be updated there without touching components. To update the résumé, replace
+[`public/resume.pdf`](public/resume.pdf); the download buttons pick it up automatically.
 
-**Use GitHub Codespaces**
+## Build & deploy
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+npm run build      # outputs to dist/ with relative paths
+```
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e555c2f4-eb36-4e71-8664-9ecf9a37c338) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+The site is served by GitHub Pages from the `gh-pages` branch — push the contents of
+`dist/` to that branch to deploy.

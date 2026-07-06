@@ -1,120 +1,115 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Design system — "engineer's field notebook"
+  Cool graph paper, ink, deep pine accent, trail-signal orange in trace doses.
+*/
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
+    /* paper */
+    --background: 150 14% 96%;
+    --foreground: 165 20% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card-foreground: 165 20% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
+    --popover-foreground: 165 20% 11%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    /* pine */
+    --primary: 162 48% 22%;
+    --primary-foreground: 150 20% 97%;
 
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
+    --secondary: 156 12% 91%;
+    --secondary-foreground: 165 20% 11%;
 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 156 12% 91%;
+    --muted-foreground: 162 9% 38%;
 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
+    /* trail-signal orange — used sparingly */
+    --accent: 21 72% 44%;
+    --accent-foreground: 30 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
+    --border: 158 12% 84%;
+    --input: 158 12% 84%;
+    --ring: 162 48% 22%;
 
-    --radius: 0.75rem;
+    /* grid + hairlines for the notebook texture */
+    --grid: 162 15% 22%;
+
+    --radius: 0.5rem;
   }
 
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 20% 98%;
-
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+    background-image:
+      linear-gradient(to right, hsl(var(--grid) / 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--grid) / 0.055) 1px, transparent 1px);
+    background-size: 36px 36px;
+    background-attachment: fixed;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+
+  ::selection {
+    background: hsl(var(--primary) / 0.9);
+    color: hsl(var(--primary-foreground));
   }
-  
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
-  }
-  
-  h2 {
-    @apply text-3xl sm:text-4xl;
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
   }
 }
 
 @layer components {
-  .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-md;
+  /* expanded-width Archivo for headlines */
+  .display {
+    font-family: 'Archivo', system-ui, sans-serif;
+    font-stretch: 115%;
+    letter-spacing: -0.025em;
   }
-  
-  .section-padding {
-    @apply py-16 md:py-24;
-  }
-  
-  .reveal-animation {
-    @apply opacity-0 translate-y-4 transition duration-700 ease-out;
-  }
-  
-  .reveal-animation.is-revealed {
-    @apply opacity-100 translate-y-0;
-  }
-  
-  .hover-lift {
-    @apply transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg;
-  }
-}
 
-.section-divider {
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.1) 50%, rgba(255,255,255,0) 100%);
+  /* figure-caption label: FIG. 01 — SECTION */
+  .fig-label {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-[3px] border border-border bg-secondary/60 px-2 py-0.5 font-mono text-[11px] leading-5 text-foreground/80;
+  }
+
+  .hairline {
+    @apply border-t border-border;
+  }
+
+  .link-quiet {
+    @apply underline decoration-border underline-offset-4 transition-colors hover:text-primary hover:decoration-primary;
+  }
+
+  .panel {
+    @apply rounded-lg border border-border bg-card shadow-[0_1px_2px_rgba(20,32,27,0.05),0_8px_24px_-16px_rgba(20,32,27,0.25)];
+  }
 }

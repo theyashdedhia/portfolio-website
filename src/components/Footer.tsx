@@ -1,48 +1,91 @@
-
-import SocialLinks from "./SocialLinks";
+import { ArrowUpRight } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
 import data from "@/data.json";
 
+const RESUME_HREF = `${import.meta.env.BASE_URL}resume.pdf`;
+
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
+  const reduce = useReducedMotion();
+  const { personalInfo } = data;
+  const github = data.socialLinks.find((s) => s.name === "GitHub")?.url;
+  const linkedin = data.socialLinks.find((s) => s.name === "LinkedIn")?.url;
+
   return (
-    <footer id="contact" className="bg-gray-50 pt-16 pb-8">
-      <div className="container px-4 mx-auto">
-        <div className="flex justify-center mb-12">
-          <div className="text-center max-w-md">
-            <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-gray-700 mb-6">
-              If you're looking to create amazing digital products, contact me.
-            </p>
-            
-            <div className="space-y-3">
-              <div className="flex flex-col items-center">
-                <span className="font-medium mb-1">Email:</span>
-                <a href={`mailto:${data.personalInfo.email}`} className="text-primary hover:underline">
-                  {data.personalInfo.email}
+    <footer id="contact" className="scroll-mt-24 border-t border-border bg-card/60">
+      <div className="container py-16 md:py-24">
+        <motion.div
+          initial={reduce ? false : { opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
+          className="grid gap-12 md:grid-cols-[1.3fr_1fr] md:gap-16"
+        >
+          <div>
+            <p className="fig-label mb-5">FIG. 07 — Contact</p>
+            <h2 className="display max-w-md text-3xl font-extrabold leading-[1.05] md:text-5xl">
+              Let's build something that ships.
+            </h2>
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="mt-7 inline-block text-lg font-medium text-primary underline decoration-primary/40 underline-offset-8 transition-colors hover:decoration-primary md:text-2xl"
+            >
+              {personalInfo.email}
+            </a>
+
+            <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3">
+              {github && (
+                <a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:text-primary">
+                  GitHub <ArrowUpRight size={13} />
                 </a>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="font-medium mb-1">Location:</span>
-                <span className="text-gray-700">{data.personalInfo.location}</span>
-              </div>
-            </div>
-            
-            <div className="mt-6 flex justify-center">
-              <SocialLinks size={22} />
+              )}
+              {linkedin && (
+                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:text-primary">
+                  LinkedIn <ArrowUpRight size={13} />
+                </a>
+              )}
+              <a href={RESUME_HREF} download="Yash-Dedhia-Resume.pdf" className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:text-primary">
+                Résumé <ArrowUpRight size={13} />
+              </a>
             </div>
           </div>
-        </div>
-        
-        <div className="section-divider mb-8"></div>
-        
-        <div className="flex flex-col items-center text-sm text-gray-600">
-          <p>© {currentYear} {data.personalInfo.name}. All rights reserved.</p>
-          <p className="mt-2">
-            Designed with 
-            <span className="text-red-500 mx-1">♥</span>
-            by Myself
+
+          {/* drawing title block */}
+          <div className="panel h-fit self-end p-0 md:justify-self-end md:min-w-[280px]">
+            <dl className="divide-y divide-border font-mono text-xs">
+              <div className="flex items-center justify-between gap-8 px-4 py-3">
+                <dt className="fig-label">Location</dt>
+                <dd className="text-foreground/80">Melbourne, AU</dd>
+              </div>
+              <div className="flex items-center justify-between gap-8 px-4 py-3">
+                <dt className="fig-label">Timezone</dt>
+                <dd className="text-foreground/80">AEST (UTC+10)</dd>
+              </div>
+              <div className="flex items-center justify-between gap-8 px-4 py-3">
+                <dt className="fig-label">Status</dt>
+                <dd className="inline-flex items-center gap-2 text-foreground/80">
+                  <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  Open to interesting problems
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </motion.div>
+
+        <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 sm:flex-row sm:items-center">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
+          <div className="flex items-center gap-5">
+            <span className="fig-label">REV 2026.07</span>
+            <a
+              href="https://github.com/theyashdedhia/portfolio-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fig-label transition-colors hover:text-primary"
+            >
+              Source ↗
+            </a>
+          </div>
         </div>
       </div>
     </footer>
