@@ -50,6 +50,20 @@
         "Worked with QA and DevOps on CI/CD integration and deployment."
       ],
       "stack": ["C#", ".NET Core", "MySQL", "REST"]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Skyline Energy & Infraa",
+      "location": "Mumbai",
+      "period": "Apr 2021 — Jun 2023",
+      "summary": "Part-time hybrid role building and maintaining an internal inventory management web application.",
+      "bullets": [
+        "Built a FastAPI and Next.js inventory management system used by 25+ staff across procurement and operations.",
+        "Automated stock tracking workflows for 1,200+ inventory records, reducing manual reconciliation effort by 35%.",
+        "Developed Python unit tests and performed system testing, cutting recurring data-entry issues by 40%.",
+        "Trained internal users on the web application and supported rollout across day-to-day inventory workflows."
+      ],
+      "stack": ["Python", "FastAPI", "Next.js", "Unit testing"]
     }
   ],
   "products": [
