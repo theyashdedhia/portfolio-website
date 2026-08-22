@@ -8,7 +8,6 @@ const Experience = () => (
         <article key={`${job.company}-${job.period}`} className="grid gap-4 py-9 first:pt-0 last:pb-0 md:grid-cols-[190px_1fr] md:gap-8">
           <div>
             <p className="font-mono text-xs tracking-[0.08em] text-foreground/80">{job.period}</p>
-            <p className="fig-label mt-1.5">{job.location}</p>
           </div>
 
           <div>

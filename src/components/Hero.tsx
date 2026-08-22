@@ -4,7 +4,7 @@ import PipelineSchematic from "./PipelineSchematic";
 import data from "@/data.json";
 
 const RESUME_HREF = `${import.meta.env.BASE_URL}resume.pdf`;
-const PHOTO_HREF = `${import.meta.env.BASE_URL}YashPicTransparent.png`;
+const PHOTO_HREF = `${import.meta.env.BASE_URL}yash-professional.png`;
 
 const Hero = () => {
   const reduce = useReducedMotion();
@@ -28,13 +28,13 @@ const Hero = () => {
               <img
                 src={PHOTO_HREF}
                 alt="Portrait of Yash Dedhia"
-                className="h-full w-full origin-[50%_22%] scale-[1.6] object-cover"
+                className="h-full w-full object-cover object-[50%_22%]"
               />
             </div>
             <div>
               <p className="display text-base font-semibold leading-tight">{personalInfo.name}</p>
               <p className="fig-label mt-1">
-                {personalInfo.title} · {personalInfo.location}
+                {personalInfo.title}
               </p>
             </div>
           </motion.div>
@@ -43,8 +43,8 @@ const Hero = () => {
             {...fadeUp(0.1)}
             className="display max-w-2xl text-[2.7rem] font-extrabold leading-[1.02] sm:text-6xl lg:text-[3.6rem] xl:text-[4rem]"
           >
-            Agentic AI systems that{" "}
-            <span className="text-primary">hold up in production.</span>
+            Ambiguous requirements, turned into{" "}
+            <span className="text-primary">production AI systems.</span>
           </motion.h1>
 
           <motion.p

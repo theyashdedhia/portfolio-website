@@ -53,14 +53,6 @@ const Footer = () => {
           <div className="panel h-fit self-end p-0 md:justify-self-end md:min-w-[280px]">
             <dl className="divide-y divide-border font-mono text-xs">
               <div className="flex items-center justify-between gap-8 px-4 py-3">
-                <dt className="fig-label">Location</dt>
-                <dd className="text-foreground/80">Melbourne, AU</dd>
-              </div>
-              <div className="flex items-center justify-between gap-8 px-4 py-3">
-                <dt className="fig-label">Timezone</dt>
-                <dd className="text-foreground/80">AEST (UTC+10)</dd>
-              </div>
-              <div className="flex items-center justify-between gap-8 px-4 py-3">
                 <dt className="fig-label">Status</dt>
                 <dd className="inline-flex items-center gap-2 text-foreground/80">
                   <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />

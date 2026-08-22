@@ -25,7 +25,7 @@ const FieldWork = () => (
               <div>
                 <h3 className="display text-lg font-bold leading-tight">{entry.role}</h3>
                 <p className="fig-label mt-0.5">
-                  {entry.organization} · {entry.location}
+                  {entry.organization}
                 </p>
               </div>
             </div>

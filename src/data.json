@@ -1,69 +1,63 @@
 {
   "personalInfo": {
     "name": "Yash Dedhia",
-    "title": "Founding AI Engineer",
-    "location": "Melbourne, Australia",
+    "title": "AI Engineer",
     "email": "yashdedhia1214@gmail.com",
-    "statement": "I build agentic AI systems that hold up in production.",
-    "intro": "Forward-deployed AI engineer — I sit with stakeholders to scope the problem, then design, ship, and operate the system end to end. Most recently Founding AI Engineer at AI Squared. Founder of ShareMyVault and AgentLens.",
-    "focus": ["LangGraph", "RAG pipelines", "Multi-agent orchestration"]
+    "statement": "I turn ambiguous requirements into production AI systems.",
+    "intro": "AI engineer with five years of experience shipping software systems end to end. I build production agentic workflows, evaluation-driven RAG systems, and full-stack products—including ShareMyVault, now used by 100+ people.",
+    "focus": ["Agentic workflows", "RAG & evaluation", "Full-stack product engineering"]
   },
   "experience": [
     {
-      "role": "Founding AI Engineer",
+      "role": "AI Engineer",
       "company": "AI Squared",
-      "location": "Melbourne",
-      "period": "May 2024 — Jun 2026",
-      "summary": "Forward Deployed Engineer, partnering with stakeholders to scope requirements, design AI solutions, and deliver production-ready implementations.",
+      "period": "May 2024 — Present",
+      "summary": "Engineer #2, working in a forward-deployed capacity to translate ambiguous stakeholder requirements into production AI and full-stack systems.",
       "bullets": [
-        "Architected end-to-end agentic workflows with LangGraph — multi-step reasoning, planning, and task execution across multiple cooperating agents.",
-        "Designed RAG pipelines combining semantic search with contextual retrieval to improve response accuracy and reduce hallucinations.",
-        "Built asynchronous workflow execution with state management and memory persistence for long-running agents.",
-        "Cut redundant database queries by 70% with a high-performance caching architecture on Supabase and PostgreSQL."
+        "Architected a LangGraph asset-onboarding workflow that reduced a 12-step manual process to one automated workflow across three systems, cutting onboarding time by 75% per asset.",
+        "Built a RAG evaluation suite for citation, grounding, and context recall, reducing unsupported responses by 60% and improving grounded-answer pass rate from 72% to 91%.",
+        "Delivered agentic workflows with 90%+ successful task completion inside a private network using open-source models and company security controls.",
+        "Reduced backend and database requests by 70% by preloading and caching read data client-side in a Vue.js application.",
+        "Shipped Node.js and Flutter applications, payment integrations, and PostgreSQL systems with RLS, message queues, pgvector, and scheduled jobs."
       ],
-      "stack": ["Python", "LangGraph", "RAG", "Supabase", "PostgreSQL"]
+      "stack": ["Python", "LangGraph", "RAG evals", "Node.js", "Flutter", "PostgreSQL"]
     },
     {
       "role": "AI Engineer",
       "company": "Australian Red Cross Lifeblood",
-      "location": "Melbourne",
       "period": "Jul 2025 — Nov 2025",
-      "summary": "Work Integrated Learning placement through the RMIT Master of Information Technology.",
+      "summary": "Work Integrated Learning engagement through RMIT, focused on secure GenAI knowledge access in a healthcare environment.",
       "bullets": [
-        "Developed a serverless GenAI web application deployed across AWS and Azure.",
-        "Implemented RAG pipelines on vector databases to retrieve and contextualise data from multiple file types.",
-        "Integrated the RAG pipeline with an internal chatbot for knowledge-based query handling.",
-        "Ensured secure data processing, low-latency responses, and production-grade availability."
+        "Built and deployed a serverless GenAI knowledge-access application across AWS and Azure.",
+        "Evaluated RAG quality with LLM-as-a-judge across groundedness, relevance, and completeness, improving answer accuracy from approximately 78% to 92%.",
+        "Designed data flows around healthcare privacy requirements so PII and PHI remained within approved infrastructure and compliance controls."
       ],
-      "stack": ["AWS", "Azure", "Vector databases", "RAG"]
+      "stack": ["AWS", "Azure", "RAG", "LLM evaluation", "Healthcare privacy"]
     },
     {
       "role": "Software Developer",
       "company": "Arcon Techsolutions",
-      "location": "Mumbai",
       "period": "Jul 2023 — Feb 2024",
-      "summary": "Backend engineering on enterprise security-analytics products.",
+      "summary": "Full-stack engineering for an enterprise customer identity and access management platform.",
       "bullets": [
-        "Developed and maintained enterprise-grade backend APIs with .NET Core and MySQL.",
-        "Architected and optimised RESTful microservices for security-analytics products.",
-        "Improved API performance by 30% and shipped role-based authentication modules.",
-        "Worked with QA and DevOps on CI/CD integration and deployment."
+        "Developed and maintained backend APIs using .NET Core and MySQL for a CIAM system.",
+        "Architected and optimized RESTful microservices supporting authentication, analytics workflows, and backend data access.",
+        "Improved API performance by 30%, implemented role-based authentication modules, and built frontend features in Angular.js."
       ],
-      "stack": ["C#", ".NET Core", "MySQL", "REST"]
+      "stack": ["C#", ".NET Core", "MySQL", "REST", "Angular.js"]
     },
     {
-      "role": "Software Developer",
+      "role": "Full Stack Software Engineer",
       "company": "Skyline Energy & Infraa",
-      "location": "Mumbai",
-      "period": "Apr 2021 — Jun 2023",
-      "summary": "Part-time hybrid role building and maintaining an internal inventory management web application.",
+      "period": "Apr 2020 — Jun 2023",
+      "summary": "Built and operated an internal inventory-management platform for approximately 50 staff.",
       "bullets": [
-        "Built a FastAPI and Next.js inventory management system used by 25+ staff across procurement and operations.",
-        "Automated stock tracking workflows for 1,200+ inventory records, reducing manual reconciliation effort by 35%.",
-        "Developed Python unit tests and performed system testing, cutting recurring data-entry issues by 40%.",
-        "Trained internal users on the web application and supported rollout across day-to-day inventory workflows."
+        "Built a FastAPI, MySQL, and Next.js inventory system supporting roughly 1,500 SKUs and 100 daily orders.",
+        "Replaced manual ordering with a digital workflow that improved order tracking, inventory visibility, and coordination across remote teams.",
+        "Created staff interfaces for inventory lookup, record management, and order processing.",
+        "Trained all 50 internal staff members, supporting 100% adoption across day-to-day operations."
       ],
-      "stack": ["Python", "FastAPI", "Next.js", "Unit testing"]
+      "stack": ["Python", "FastAPI", "MySQL", "Next.js"]
     }
   ],
   "products": [
@@ -73,27 +67,28 @@
       "url": "https://www.sharemyvault.com/",
       "urlLabel": "sharemyvault.com",
       "tagline": "Estate planning people can actually finish.",
-      "description": "AI-powered digital estate planning that walks seniors and non-technical users through wills and legacy planning in plain conversation.",
+      "description": "An AI-powered estate-planning platform for wills, legacy planning, and guided support, designed for expats, seniors, and non-technical users.",
       "bullets": [
-        "Cross-platform Flutter app with on-device AI inference — private, low-latency, and working without a connection.",
-        "Conversations become professionally formatted, legally structured wills and estate documents.",
-        "Zero-knowledge, privacy-first backend on Supabase and PostgreSQL with encrypted document storage."
+        "Grew the platform to 100+ live users and secured a Sarvam AI API grant for multilingual voice capabilities.",
+        "Built a cross-platform Flutter app with multilingual speech-to-text and text-to-speech.",
+        "Designed the web and mobile products around zero-knowledge encryption to protect sensitive user data.",
+        "Developed conversational workflows that turn complex estate-planning decisions into clear, guided steps."
       ],
-      "stack": ["Flutter", "On-device AI", "Supabase", "PostgreSQL"]
+      "stack": ["Flutter", "Conversational AI", "Multilingual voice", "Zero-knowledge encryption"]
     },
     {
       "name": "AgentLens",
-      "role": "Founder",
+      "role": "Founder · Exited",
       "url": "https://agentlens.in",
       "urlLabel": "agentlens.in",
       "tagline": "See your website the way AI does.",
-      "description": "A GenAI platform that evaluates websites for AI-search readiness — accessibility, structured data, crawlability, and LLM interpretability.",
+      "description": "An early AI-search readiness platform, conceived before AI SEO became a recognised category.",
       "bullets": [
-        "Autonomous crawling pipelines: robots.txt parsing, multi-page exploration, metadata extraction, WCAG audits.",
-        "RAG over real-time web data with OpenAI LLMs for context-aware site assessments.",
-        "Simulation agents that emulate how ChatGPT, Gemini, and Perplexity read and retrieve a site."
+        "Evaluated accessibility, structured data, crawlability, and LLM interpretability.",
+        "Built autonomous crawling with robots.txt parsing, multi-page exploration, metadata extraction, and WCAG audits.",
+        "Developed simulation agents that emulate how ChatGPT, Gemini, and Perplexity interpret and retrieve website content."
       ],
-      "stack": ["OpenAI", "RAG", "Autonomous agents", "Next.js"]
+      "stack": ["Autonomous agents", "Web crawling", "WCAG", "AI search"]
     }
   ],
   "sideBuilds": [
@@ -109,7 +104,7 @@
     },
     {
       "name": "This site",
-      "description": "React, Tailwind, and framer-motion — source on GitHub.",
+      "description": "React, Tailwind, and Framer Motion—source on GitHub.",
       "url": "https://github.com/theyashdedhia/portfolio-website"
     }
   ],
@@ -119,44 +114,38 @@
       "items": ["Python", "TypeScript", "Java", "C#"]
     },
     {
-      "group": "AI systems",
-      "items": ["LangGraph", "RAG", "Multi-agent orchestration", "Vector databases"]
+      "group": "AI engineering",
+      "items": ["LangGraph", "RAG", "Agentic workflows", "Pydantic", "AI observability", "Evals"]
     },
     {
-      "group": "Cloud & data",
-      "items": ["AWS", "Azure", "Supabase", "PostgreSQL"]
+      "group": "Cloud, data & backend",
+      "items": ["AWS", "Azure", "Supabase", "PostgreSQL", "FastAPI", ".NET Core", "Node.js", "pgvector"]
     },
     {
-      "group": "Frameworks",
-      "items": ["Next.js", "Node.js", "Vue.js", "Flutter", ".NET Core"]
+      "group": "Frontend & product",
+      "items": ["Flutter", "Next.js", "Vue.js", "React.js", "Stripe"]
     }
   ],
   "education": [
     {
       "degree": "Master of Information Technology (AI)",
-      "institution": "RMIT University",
-      "location": "Melbourne",
-      "period": "2024 — 2025"
+      "institution": "RMIT University"
     },
     {
       "degree": "Bachelor of Engineering, Computer Engineering",
-      "institution": "Mumbai University",
-      "location": "Mumbai",
-      "period": "2019 — 2023"
+      "institution": "Mumbai University"
     }
   ],
   "fieldWork": [
     {
       "role": "Wildlife Rescuer",
       "organization": "RAWW",
-      "location": "Mumbai",
-      "description": "Rescue, rehabilitation, and care across species with India's largest urban wildlife conservation organisation. Led urban-wildlife awareness drives and trained volunteers in safe handling and emergency response."
+      "description": "Assisted with rescue, rehabilitation, and care across species; led urban-wildlife awareness drives and trained volunteers in safe handling and emergency response."
     },
     {
       "role": "Trek Leader",
       "organization": "Mountain Marks",
-      "location": "Western Ghats",
-      "description": "Organised and led multiple high-altitude treks — logistics, safety, and route planning for large groups, with an emphasis on leadership and endurance."
+      "description": "Organised and led high-altitude treks, managing logistics, safety, and route planning for large groups in high-responsibility outdoor environments."
     }
   ],
   "socialLinks": [
