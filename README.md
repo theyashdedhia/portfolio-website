@@ -4,7 +4,7 @@
 
 My personal portfolio — I'm a Founding AI Engineer based in Melbourne, building agentic
 AI systems with LangGraph and RAG, and the founder of
-[ShareMyVault](https://www.sharemyvault.com/) and [AgentLens](https://agentlens.in).
+[ShareMyVault](https://www.sharemyvault.com/) and [AgentLens](https://agentlens-git-main-agentlens-projects.vercel.app/).
 
 ## About the site
 

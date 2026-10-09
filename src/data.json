@@ -79,8 +79,8 @@
     {
       "name": "AgentLens",
       "role": "Founder · Exited",
-      "url": "https://agentlens.in",
-      "urlLabel": "agentlens.in",
+      "url": "https://agentlens-git-main-agentlens-projects.vercel.app/",
+      "urlLabel": "View AgentLens",
       "tagline": "See your website the way AI does.",
       "description": "An early AI-search readiness platform, conceived before AI SEO became a recognised category.",
       "bullets": [
